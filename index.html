@@ -56,7 +56,16 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-window">
+            <button data-modal-close type="button" class="close-button">
+              <svg class="close-icon">
+                <use href="./images/icons.svg#icon-close-window"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--Секція "Переваги"-->
@@ -117,23 +126,37 @@
           <h2 class="section-caption">Чим ми займаємося</h2>
           <ul class="flex-schedule list">
             <li class="practice-item">
-              <img
-                src="./images/computer.jpg"
-                alt="Програмування на комп‘ютері"
-                width="370"
-                height="294"
-              />
+              <div class="practice-picture">
+                <img
+                  src="./images/computer.jpg"
+                  alt="Програмування на комп‘ютері"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="practice-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="practice-item">
-              <img src="./images/laptop.jpg" alt="Верстка на комп‘ютері" width="370" height="294" />
+              <div class="practice-picture">
+                <img
+                  src="./images/laptop.jpg"
+                  alt="Верстка на комп‘ютері"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="practice-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="practice-item">
-              <img
-                src="./images/tablet.jpg"
-                alt="Підбір кольору на планшеті"
-                width="370"
-                height="294"
-              />
+              <div class="practice-picture">
+                <img
+                  src="./images/tablet.jpg"
+                  alt="Підбір кольору на планшеті"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="practice-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,5 +452,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
